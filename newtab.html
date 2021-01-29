@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MindFlow</title>
+  <meta charset="utf-8">
+  <style>
+
+    html, body{
+      width:100%;
+      height:100vh;
+      margin:0;
+      padding:0;
+      font-size:100%;
+      font-family:sans-serif;
+      background:linear-gradient(rgb(11, 170, 104), rgb(138, 220, 231));
+      color:bisque;
+    }
+    .taskTitle{
+      margin:0;
+      padding:0;
+      font-size:170%;
+      display:inline;
+    }
+    .size{
+      float:right;
+      margin-right:2%;
+      display:inline;
+      font-size:130%;
+    }
+    .title{
+      font-size:260%;
+      margin-left:auto;
+      margin-right:auto;
+      width:40%;
+      text-align:center;
+    }
+    #username{
+      font-size:170%;
+      margin-left:70%;
+      margin-right:0%;
+      width:30%;
+      text-align:center;
+    }
+
+    .editor span::after {
+      content: '';
+    }
+    
+    .scrollable{
+      overflow-y: auto;
+      width:36%;
+      height:50vh;
+      margin-left:1%;
+      padding:2%;
+      border-radius:7%;
+      background-color: rgba(32, 32, 32, 0.9);
+    }
+    [contenteditable]:focus{
+      outline:0px solid transparent;
+    }
+    [placeholder]:empty:before{
+      content: attr(placeholder);
+      color:bisque;
+      opacity:0.69;
+      cursor:text;
+    }
+    [placeholder]:empty:focus:before{
+      content:"";
+    }
+
+  </style>
+</head>
+
+<body class = "">
+  <div class="main">
+    <h1 class = "title">MindFlow</h1>
+    <h3 id = "username" placeholder = "Your name here..." contenteditable="true"></h3>
+    <div class = "scrollable" id = "tasks">
+    </div>
+    <script src="app.js"></script>
+  </div>
+</body>
+</html>
