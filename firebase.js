@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyCoV6cgS2E0Ypdvp-qsxS089TYWL0nOlJM",
-  authDomain: "mindflow-1.firebaseapp.com",
-  databaseURL: "https://mindflow-1-default-rtdb.firebaseio.com/",
-  projectId: "mindflow-1",
-  storageBucket: "mindflow-1.appspot.com",
-  messagingSenderId: "791719676716",
-  appId: "1:791719676716:web:5b6e270a603f865ad4ba89"
+  apiKey: "...",
+  authDomain: "...",
+  databaseURL: "...",
+  projectId: "...",
+  storageBucket: "...",
+  messagingSenderId: "...",
+  appId: "..."
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
